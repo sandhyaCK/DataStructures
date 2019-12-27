@@ -1,24 +1,15 @@
-package com.Bridgelabz.DataStructures;
-import java.util.*;
+
+/*#******************************************************************************************************************
+        # @purpose :Demonstrate PrimePalindromeLogic.
+        # @file  :PrimePalindrome.java
+        # @author :Sandhya
+   #***************************************************************************************************************/package com.Bridgelabz.DataStructures;
+
+   import java.util.*;
+   import com.Bridgelabz.DataStructures.*;
 public class primepalindrome {
-boolean isprime(int n) {
-	int c=0;
-		for(int i=1;i<=n;i++) {
-			if(n%i==0) {
-                  c++;
-				}
-		}if(c==2) 
-			return true;
-			else 
-		 return false;
-}
-
-
- 
 
 	public static void main(String[] args) {
-	primepalindrome ob = new primepalindrome();	
-	
 	Scanner sc = new Scanner(System.in);
 	System.out.println("enter the no of rows");
 	int m = sc.nextInt();
@@ -33,21 +24,14 @@ boolean isprime(int n) {
 	
 int i = 0,j=0;int k=1;int rev=0; int r; int org;
 while(i<m*p) {
-if(ob.isprime(k)==true) {
-	 org=k;
-	while(k!=0) {
-	r=k%10;
-	rev=(rev*10)+r;
-	k=k/10;
-	}	
-if(org==rev){
-b[i]=org;
+if(Utility.isprime(k)==true) {
+	if(Utility.palindromeInt(k)==true) {
+b[i]=k;
 }
 k++;
 }
 i++;
 }
-
 int x=0;
 for(i=0;i<M;i++) {
 	for(j=0;j<N;j++) {
