@@ -5,24 +5,13 @@
    #***************************************************************************************************************/
 package com.Bridgelabz.DataStructures;
 import java.util.*;
+import com.Bridgelabz.DataStructures.*;
 public class prime2d {	
-	boolean isprime(int n) {
-		int c=0;
-			for(int i=1;i<=n;i++) {
-				if(n%i==0) {
-	                  c++;
-					}
-			}
-			if(c==2) 
-				return true;
-				else 
-			 return false;
-			
-	}
+	
 
 	
 		public static void main(String[] args) {
-		primepalindrome ob = new primepalindrome();	
+
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the no of rows");
@@ -34,7 +23,7 @@ public class prime2d {
 		
 	int i = 0,j=0;int k=1;
 	while(i<m*d) {
-	if(ob.isprime(k)==true) {
+	if((Utility.isprime(k))==true) {
 	b[i]=k;
 	i++;
 	}
