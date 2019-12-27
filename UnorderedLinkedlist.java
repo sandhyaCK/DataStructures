@@ -15,6 +15,7 @@ public class UnorderedLinkedlist {
 	Node head;
 	 public static class Node
 	{
+	public static final String val = null;
 	String data;
 		Node next;
 		Node(String i){
@@ -48,14 +49,25 @@ Node aa = new Node(st[4]);
 list.head.next = second;
 second.next=third;
 third.next=fourth;
+if(list.member("SHASHI")==true) {
+Node bb = new Node("MANJU");
+third.next = bb;
 list.display();
-/*if(list.equals("SHASHI")) {
-	Node bb = new Node("MANJU");
-	third.next = bb;
-	list.display();
-
-	
-}*.*/
 }
 
+}
+public boolean member(String val){
+	  Node current = head; 
+	  while (current != null) {
+	    if (current.data.equals(val)) {
+	      return true; 	
+	    } else {
+	      current = current.next;
+	    }
+	  }
+	  return false;
 	}
+
+}
+
+	
