@@ -14,7 +14,7 @@ public static boolean check(String s1) {
 	
 	char c = s1.charAt(i);
 	if(c=='(') {
-		System.out.println(s.push(s1.charAt(i)));
+		System.out.println(s.push(c));
 	}
 	else if(c==')') {
 		s.pop();
@@ -24,49 +24,7 @@ public static boolean check(String s1) {
 }
 	public static void main(String[] args) {
 	
-		/*s.isEmpty();
-		System.out.println(s);
-		s.push('(');
-		s.push(5);
-		s.push('+');
-		s.push(6);
-		s.push(')');
-		s.pop();
-		s.push('*');
-		s.push('(');
-		s.push('7');
-		s.push('+');
-		s.push('8');
-		s.push(')');
-		s.pop();
-		s.push('/');
-		s.push('(');
-		s.push(4);
-		s.push('*');
-		s.push(3);
-		s.push(')');
-		s.pop();
-		s.push('(');
-		s.push(5);
-		s.push('+');
-		s.push(6);
-		s.push(')');
-		s.pop();
-		s.push('(');
-		s.push('7');
-		s.push('+');
-		s.push('8');
-		s.push(')');
-		s.pop();
-		s.push('/');
-		s.push('(');
-		s.push(4);
-		s.push('*');
-		s.push(3);
-		s.push(')');
-		s.pop();
-		 System.out.println(s.size());
-	System.out.println(s);	*/
+		
 		String s1 = "(5+6)∗(7+8)/(4+3)(5+6)∗(7+8)/(4+3)";
 		String result = (check(s1)) ? "balanced" : "not balanced";
 		System.out.println(result);
