@@ -7,23 +7,33 @@ package com.Bridgelabz.DataStructures;
 import java.io.*;
 import java.util.*;
 public class Hashing {
- LinkedList[]  list = new LinkedList[11];
+ @SuppressWarnings("unchecked")
+List<Integer>  list[] = new LinkedList[11];
 
- Scanner sc = new Scanner(System.in);
- public Hashing() {
-	 int[] a = {23,45,12,68,17,10,56};
+
+ public Hashing() throws FileNotFoundException {
+	 File file = new File("/home/user/Desktop/file.txt");
+	 FileReader reader = new FileReader(file);
+	 		BufferedReader br = new BufferedReader(reader);
+	 int[] a =new int[10];
+	 Scanner sc = new Scanner(file);
+	 while(sc.hasNext()) {
+		 int i=0;
+	     a[i] =sc.nextInt();
+		// int b = sc.nextInt();
+	     System.out.println(a[i] +" ");
+		  i++;
+	 }
 	 for(int i=0;i<a.length;i++) {
 		 int rem = a[i]%11;
+		 list[rem] = new LinkedList<Integer>();
 			  if(list[rem]==null) {
-			list[rem] = new LinkedList();
 			list[rem].add(a[i]);
 		 }
 			 else {
 				 list[rem].add(a[i]);
 			 }
 	 } 
-		 
- 
 		 for(int i=0;i<11;i++) {
 			 System.out.println(i);
 			 if(list[i]!=null) {
@@ -32,9 +42,7 @@ public class Hashing {
 		 }
 		 }
  }
- 
-
-		 public static void main(String[] args) {
+ public static void main(String[] args) throws FileNotFoundException {
 			 Hashing hs = new Hashing();
 		 }
 		 
