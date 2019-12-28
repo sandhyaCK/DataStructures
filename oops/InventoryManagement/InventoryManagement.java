@@ -14,10 +14,8 @@ public class InventoryManagement {
 		 JSONParser parser = new JSONParser();	 
 	try(Reader reader = new FileReader("MyJson.json")){
 	JSONArray list111 = (JSONArray) parser.parse(reader);	
-    Iterator<Long> iterator = list111.iterator();
-    while ( (iterator).hasNext()) {
-         System.out.println(iterator.next());
-         }        
+    
+Utility.GetData(list111);   
     long totalweight =0;
     long price_per_kg=0; 
     
