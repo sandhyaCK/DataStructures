@@ -36,11 +36,8 @@ public class Utility {
 	public static void ReadFile() {
 		 JSONParser parser = new JSONParser();		 
 	try(Reader reader = new FileReader("MyJson.json")){
-	JSONArray Array = (JSONArray) parser.parse(reader);	//JSONArray list111 = (JSONArray)obj.get("Rice");
-   Iterator<Long> iterator = Array.iterator();
-   while ( (iterator).hasNext()) {
-        System.out.println(iterator.next());
-   }     }
+	JSONArray Array = (JSONArray) parser.parse(reader);
+	}
 	catch(Exception e) {
 		e.printStackTrace();
 	}

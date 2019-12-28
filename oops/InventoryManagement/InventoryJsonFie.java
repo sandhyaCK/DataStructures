@@ -11,8 +11,7 @@ public class InventoryJsonFie {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
-		JSONObject obj1 = new JSONObject();
-		
+		JSONObject obj1 = new JSONObject();		
 		JSONArray list1 = new JSONArray();
 		obj1.put("weight_in_kg",50);
 		obj1.put("price_per_kg" ,10);
@@ -58,7 +57,6 @@ public class InventoryJsonFie {
 		list333.add(obj32);
 		JSONObject obj333 = new JSONObject();
 		obj333.put("Pulses", list333);
-		
 		JSONObject obj = new JSONObject();
 		obj.put("Inventory",obj111);
 		obj.put("Inventory",obj222);
@@ -66,9 +64,9 @@ public class InventoryJsonFie {
 		
 		try (FileWriter file = new FileWriter("MyJson.json")){
 	
-		    file.write(list222.toJSONString());
+		    file.write(obj.toJSONString());
 			file.flush();
-		System.out.println(obj);
+		
 		}
 		catch(IOException e) {
 			e.printStackTrace();
