@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+             <context:annotation-config></context:annotation-config>
+    <!--  <bean id = "tyreobj" class = "com.bridgelabz.sandy.DemoPropject.Tyre">
+  <property name="Brand" value ="MRF"></property>
+  <property name="NoOfWheels" value = "2"></property>
+  </bean>
+    <bean id ="bike" class ="com.bridgelabz.sandy.DemoPropject.Bike" >
+     <constructor-arg  name="Name" value = "sss"></constructor-arg>
+   <property name="tyre" ref = "tyreobj">
+ </property>
+ </bean>
+  -->
+   <!--   <bean id= "res" class = "com.bridgelabz.constructorInj.Result">
+ <constructor-arg name="java" value="89"></constructor-arg>
+ <constructor-arg name = "python" value="70"></constructor-arg>
+ </bean>
+ <bean id= "exam" class = "com.bridgelabz.constructorInj.Student">
+    <constructor-arg name = "Name" value = "Sandhya"> </constructor-arg>
+ <constructor-arg name="id" value ="1001"></constructor-arg>
+  <constructor-arg name="result" ref="res"></constructor-arg>
+  </bean>
+    -->
+ <!--  <bean id= "result11" class = "com.bridgelabz.constructorInj.Result"></bean>
+    <bean id= "result" class = "com.bridgelabz.constructorInj.Result">
+      <constructor-arg name ="java" value="89"></constructor-arg>
+      <constructor-arg name="python" value="77"></constructor-arg>
+      </bean>-->
+          <bean id= "exam" class = "com.bridgelabz.constructorInj.Student" >
+    
+    </bean>
+  
+     
+ <!--   <bean id = "tyreobj" class = "com.bridgelabz.sandy.DemoPropject.Tyre">
+  <property name="Brand" value ="MRF"></property>
+  <property name="NoOfWheels" value = "2"></property></bean>
+  <bean id = "parts" class = "com.bridgelabz.sandy.DemoPropject.Parts"></bean>
+ <bean id ="bike" class ="com.bridgelabz.sandy.DemoPropject.Bike" autowire="byType" >  </bean>
+ 
+<bean id ="bike1" class ="com.bridgelabz.sandy.DemoPropject.Bike" autowire="byName" >  </bean>
+  -->
+  
+</beans>
